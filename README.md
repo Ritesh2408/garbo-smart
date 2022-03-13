@@ -13,7 +13,7 @@ takes a toll on human health.
 - For compiling : 
 ``` npm i ```
 - Then 
-- ``` npm start ```
+``` npm start ```
 
 #### Technologies used: 
 
