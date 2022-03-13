@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="intro">
+      <div class="black"></div>
+      <div class="white"></div>
+      <div class="boxfather">
+        <div id="box">
+          <h1>WELCOME to GarboSmart</h1>
+          <button>Enter</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="homepage">
+      <h1>About Us</h1>
+      <p>
+        This application is an attempt to solve one of the most ignored problems
+        of the society – Proper garbage handling. As you move through the pages,
+        you would be entering garbage ID, the coordinates of the bin and the
+        amount of garbage present in the bin. This would save the information
+        you enter about the garbage bin and would accordingly update the map.
+        You would also be able to access your dashboard and see the map
+        depicting the location of garbage bins.
+
+        <br />
+        <br />
+        The dashboard would reflect the points you receive each time you help us
+        in improving the garbage-handling system of the city. The information
+        related to their empty-full condition can be easily accessed through our
+        webpage. The coloured garbage bins indicate 3 levels of garbage – red
+        for full, yellow for partially full, and green for empty. Also, the
+        percentage of garbage inside the bins is shown alongside the bin
+        coordinates in a prompt. All this aims to improve user experience and
+        provide an excellent interface for garbage handling.
+        <br />
+        <br />
+        For any anonymous garbage bin, the amount of garbage that is present in
+        that particular bin is detected through sensors present in the bin. And,
+        by using microcontrollers (Arduino), we retrieve the information into
+        our database, which in turn updates the existing status of garbage. Join
+        us in our mission to make our city a smart one with smart solutions for
+        a serious-yet-ignored problem – garbage handling.
+      </p>
+
+      <div class="container">
+        <button onClick="window.location.reload();" class="btn">Back</button>
+        <form action="http://localhost:5001/map">
+          <button class="btn">Go to Map</button>
+        </form>
+        <form action="http://localhost:5001/open?">
+          <button class="btn">Go to Add details</button>
+        </form>
+      </div>
+      <div class="container">
+        <p>&copy;Garbagedata</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
