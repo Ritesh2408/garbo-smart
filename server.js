@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.static("welcomepage"));
 const URI = process.env.Mongo_URI;
 mongoose.connect(
-  "mongodb+srv://sneha123:sneha123@cluster0.givdm.mongodb.net/credentials?retryWrites=true&w=majority",
+  "mongodb+srv://vsneha801:sneha123@parking.zsbax.mongodb.net/parking?retryWrites=true&w=majority",
   { useNewUrlParser: true }
 );
 const connection = mongoose.connection;
